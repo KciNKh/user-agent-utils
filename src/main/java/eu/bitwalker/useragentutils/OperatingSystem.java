@@ -52,7 +52,7 @@ public enum OperatingSystem {
 	 * Windows Mobile / Windows CE. Exact version unknown.
 	 */
 	WINDOWS(Manufacturer.MICROSOFT, null, 1, "Windows", new String[] { "Windows", "Win32" }, new String[] { "Palm", "ggpht.com" }, DeviceType.COMPUTER, null), // catch the rest of older Windows systems (95, NT,...)
-	WINDOWS_10(Manufacturer.MICROSOFT, OperatingSystem.WINDOWS, 24, "Windows 10", new String[] { "Windows NT 6.4", "Windows NT 10" }, null, DeviceType.COMPUTER, null), // before Win, yes, Windows 10 is called 6.4 LOL
+	WINDOWS_10(Manufacturer.MICROSOFT, OperatingSystem.WINDOWS, 24, "Windows 10", new String[] { "Windows NT 6.4", "Windows NT 10" }, new String[] { "Xbox", "Xbox One" }, DeviceType.COMPUTER, null), // before Win, yes, Windows 10 is called 6.4 LOL
 	WINDOWS_81(Manufacturer.MICROSOFT, OperatingSystem.WINDOWS, 23, "Windows 8.1", new String[] { "Windows NT 6.3" }, null, DeviceType.COMPUTER, null), // before Win, yes, Windows 8.1 is called 6.3 LOL
 	WINDOWS_8(Manufacturer.MICROSOFT, OperatingSystem.WINDOWS, 22, "Windows 8", new String[] { "Windows NT 6.2" }, new String[] { "Xbox", "Xbox One" }, DeviceType.COMPUTER, null), // before Win, yes, Windows 8 is called 6.2 LOL
 	WINDOWS_7(Manufacturer.MICROSOFT, OperatingSystem.WINDOWS, 21, "Windows 7", new String[] { "Windows NT 6.1" }, new String[] { "Xbox", "Xbox One" }, DeviceType.COMPUTER, null), // before Win, yes, Windows 7 is called 6.1 LOL
@@ -68,6 +68,8 @@ public enum OperatingSystem {
 	XBOX_OS(Manufacturer.MICROSOFT, OperatingSystem.WINDOWS, 62, "Xbox OS", new String[] { "xbox" }, new String[] {}, DeviceType.GAME_CONSOLE, null),
 
 	ANDROID(Manufacturer.GOOGLE, null, 0, "Android", new String[] { "Android" }, new String[] { "Ubuntu" }, DeviceType.MOBILE, null),
+	ANDROID7(Manufacturer.GOOGLE, OperatingSystem.ANDROID, 7, "Android 7.x", new String[] { "Android 7", "Android-7" }, new String[] { "glass" }, DeviceType.MOBILE, null),
+	ANDROID7_TABLET(Manufacturer.GOOGLE, OperatingSystem.ANDROID7, 70, "Android 7.x Tablet", new String[] { "Android 7", "Android-7" }, new String[] { "mobile", "glass" }, DeviceType.TABLET, null),
 	ANDROID6(Manufacturer.GOOGLE, OperatingSystem.ANDROID, 6, "Android 6.x", new String[] { "Android 6", "Android-6" }, new String[] { "glass" }, DeviceType.MOBILE, null),
 	ANDROID6_TABLET(Manufacturer.GOOGLE, OperatingSystem.ANDROID6, 60, "Android 6.x Tablet", new String[] { "Android 6", "Android-6" }, new String[] { "mobile", "glass" }, DeviceType.TABLET, null),
 	ANDROID5(Manufacturer.GOOGLE, OperatingSystem.ANDROID, 5, "Android 5.x", new String[] { "Android 5", "Android-5" }, new String[] { "glass" }, DeviceType.MOBILE, null),

@@ -120,9 +120,9 @@ public enum Browser {
 	/**
 	 * Google Chrome browser
 	 */
+	ANDROID_WEB_KIT(Manufacturer.GOOGLE, null, 2, "Android Webkit Browser", new String[] { "Android", "Build/" }, new String[] { "CrMo", "Windows", "Firefox", "Chrome", "Opera", "OPR/", "Web Preview", "Googlebot-Mobile" }, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, "Version/(([\\d]+)\\.([\\w]+))"), // Android WebKit also only identifies itself as AppleWebKit
+	ANDROID_WEB_VIEW(Manufacturer.GOOGLE, null, 200, "Chrome Web View", new String[] {"wv)", "Version"}, new String[] { "CrMo", "Windows", "Firefox","X11", "BB10", "iPod", "iPad", "iPhone", "Macintosh", "Opera", "OPR/", "Web Preview", "Googlebot-Mobile" }, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, "Version/(([\\d]+)\\.([\\w]+))"),
 	CHROME(Manufacturer.GOOGLE, null, 1, "Chrome", new String[] { "Chrome", "CrMo", "CriOS" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, "Chrome/(([0-9]+)\\.?([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)"), // before Mozilla
-	ANDROID_WEB_KIT(Manufacturer.GOOGLE, null, 2, "Android Webkit Browser", new String[] { "Android", "Build/" }, new String[] { "Windows", "Firefox", "Chrome", "Opera", "OPR/", "Web Preview", "Googlebot-Mobile" }, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, "Version/(([\\d]+)\\.([\\w]+))"), // Android WebKit also only identifies itself as AppleWebKit
-	ANDROID_WEB_VIEW(Manufacturer.GOOGLE, Browser.CHROME, 200, "Chrome Web View", new String[] {"wv", "Version"}, null, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, "Version/(([\\d]+)\\.([\\w]+))"),
 	CHROME_MOBILE(Manufacturer.GOOGLE, Browser.CHROME, 100, "Chrome Mobile", new String[] { "CrMo", "CriOS", "Mobile Safari" }, new String[] { "OPR/", "Web Preview" }, BrowserType.MOBILE_BROWSER, RenderingEngine.WEBKIT, "(?:CriOS|CrMo|Chrome)/(([0-9]+)\\.?([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)"),
 	CHROME59(Manufacturer.GOOGLE, Browser.CHROME, 64, "Chrome 59", new String[] { "Chrome/59" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null), // before Mozilla
 	CHROME58(Manufacturer.GOOGLE, Browser.CHROME, 63, "Chrome 58", new String[] { "Chrome/58" }, new String[] { "OPR/", "Web Preview", "Vivaldi" }, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, null), // before Mozilla
@@ -207,6 +207,7 @@ public enum Browser {
 	OPERA(Manufacturer.OPERA, null, 1, "Opera", new String[] { " OPR/", "Opera" }, null, BrowserType.WEB_BROWSER, RenderingEngine.PRESTO, "Opera/(([\\d]+)\\.([\\w]+))"), // before MSIE
 	OPERA_MOBILE(Manufacturer.OPERA, Browser.OPERA, 100, "Opera Mobile", new String[] { "Mobile Safari", "Opera Mobi" }, null, BrowserType.MOBILE_BROWSER, RenderingEngine.BLINK, "OPR/(([\\d]+)\\.([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)"), // Another Opera for mobile devices
 	OPERA_MINI(Manufacturer.OPERA, Browser.OPERA, 2, "Opera Mini", new String[] { "Opera Mini" }, null, BrowserType.MOBILE_BROWSER, RenderingEngine.PRESTO, null), // Opera for mobile devices
+	OPERA46(Manufacturer.OPERA, Browser.OPERA, 46, "Opera 46", new String[] { "OPR/46." }, null, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, "OPR/(([\\d]+)\\.([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)"),
 	OPERA45(Manufacturer.OPERA, Browser.OPERA, 45, "Opera 45", new String[] { "OPR/45." }, null, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, "OPR/(([\\d]+)\\.([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)"),
 	OPERA44(Manufacturer.OPERA, Browser.OPERA, 44, "Opera 44", new String[] { "OPR/44." }, null, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, "OPR/(([\\d]+)\\.([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)"),
 	OPERA43(Manufacturer.OPERA, Browser.OPERA, 43, "Opera 43", new String[] { "OPR/43." }, null, BrowserType.WEB_BROWSER, RenderingEngine.WEBKIT, "OPR/(([\\d]+)\\.([\\w]+)?(\\.[\\w]+)?(\\.[\\w]+)?)"),

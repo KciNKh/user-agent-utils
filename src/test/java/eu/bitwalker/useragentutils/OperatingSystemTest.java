@@ -356,6 +356,10 @@ public class OperatingSystemTest {
 			"Mozilla/5.0 (Android 6.0.1; Tablet; rv:41.0) Gecko/41.0 Firefox/41.0"
 	};
 
+	String[] android7 = {
+			"Mozilla/5.0 (Linux; Android 7.0; LG-H910 Build/NRD90C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.90 Mobile Safari/537.36"
+	};
+
 	String[] androidMobile = {
 			"Mozilla/5.0 (Android; Mobile; rv:23.0) Gecko/23.0 Firefox/23.0" // no OS version information in UA-string
 	};
@@ -540,6 +544,7 @@ public class OperatingSystemTest {
 		testAgents(android5_tablet, OperatingSystem.ANDROID5_TABLET);
 		testAgents(android6, OperatingSystem.ANDROID6);
 		testAgents(android6_tablet, OperatingSystem.ANDROID6_TABLET);
+		testAgents(android7, OperatingSystem.ANDROID7);
 		testAgents(androidMobile, OperatingSystem.ANDROID_MOBILE);
 		testAgents(androidTablet, OperatingSystem.ANDROID_TABLET);
 		testAgents(chromeOS, OperatingSystem.CHROME_OS);
