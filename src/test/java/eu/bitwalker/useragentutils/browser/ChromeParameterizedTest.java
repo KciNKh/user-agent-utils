@@ -83,7 +83,10 @@ public class ChromeParameterizedTest extends AbstractUserAgentParameterizedTest 
 						Browser.CHROME54, "54.0.2785.143", OperatingSystem.WINDOWS_7 },
 				{
 						"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 Mozilla/5.0 (Macintosh; Intel Mac OS X 10102) AppleWebKit/640.3.18 (KHTML like Gecko) Version/10.0.2 Safari/640.3.18",
-						Browser.CHROME59, "59.0.3071.115", OperatingSystem.WINDOWS_10
+						Browser.CHROME59, "59.0.3071.115", OperatingSystem.WINDOWS_10 },
+				{
+						"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.19.6) AppleWebKit/537.18.30 (KHTML, like Gecko) Chrome/60.0.3038.15 Safari/537.18.30",
+						Browser.CHROME60, "60.0.3038.15", OperatingSystem.MAC_OS_X
 				}
 		});
 	}
