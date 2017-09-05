@@ -110,6 +110,8 @@ public enum Browser {
 	 * Family of Microsoft Edge browsers. Pretends to be Chrome and claims to be webkit compatible.
 	 */
 	EDGE(Manufacturer.MICROSOFT, null, 300, "Microsoft Edge", new String[] { "Edge" }, null, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, "(?:Edge/(([0-9]+)\\.([0-9]*)))"),
+	EDGE17(Manufacturer.MICROSOFT, Browser.EDGE, 308, "Microsoft Edge", new String[] { "Edge/17" }, new String[] { "Mobile" }, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, "(?:Edge/((17)\\.([0-9]*)))"),
+	EDGE16(Manufacturer.MICROSOFT, Browser.EDGE, 307, "Microsoft Edge", new String[] { "Edge/16" }, new String[] { "Mobile" }, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, "(?:Edge/((16)\\.([0-9]*)))"),
 	EDGE15(Manufacturer.MICROSOFT, Browser.EDGE, 306, "Microsoft Edge", new String[] { "Edge/15" }, new String[] { "Mobile" }, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, "(?:Edge/((15)\\.([0-9]*)))"),
 	EDGE14(Manufacturer.MICROSOFT, Browser.EDGE, 304, "Microsoft Edge", new String[] { "Edge/14" }, new String[] { "Mobile" }, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, "(?:Edge/((14)\\.([0-9]*)))"),
 	EDGE13(Manufacturer.MICROSOFT, Browser.EDGE, 303, "Microsoft Edge", new String[] { "Edge/13" }, new String[] { "Mobile" }, BrowserType.WEB_BROWSER, RenderingEngine.EDGE_HTML, "(?:Edge/((13)\\.([0-9]*)))"),

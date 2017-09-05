@@ -80,7 +80,11 @@ public class OthersParameterizedTest extends AbstractUserAgentParameterizedTest 
 						Browser.EDGE14, "14.14332", OperatingSystem.WINDOWS_10 },
 				{
 						"Mozilla/5.0 (Windows NT 10.0; ARM; RM-1141) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/15.14977",
-						Browser.EDGE15, "15.14977", OperatingSystem.WINDOWS_10 }
+						Browser.EDGE15, "15.14977", OperatingSystem.WINDOWS_10 },
+				{
+						"Mozilla/5.0 (Windows NT 10.0; ARM; RM-1141) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36 Edge/16.54458",
+						Browser.EDGE16, "16.54458", OperatingSystem.WINDOWS_10
+				}
 
 		});
 	}
