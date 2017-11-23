@@ -87,7 +87,10 @@ public class SafariParameterizedTest extends AbstractUserAgentParameterizedTest 
 						Browser.MOBILE_SAFARI9, "9.0", OperatingSystem.iOS9_IPAD },
 				{
 						"Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.3 (KHTML, like Gecko) Version/10.0 Mobile/14D15 Safari/602.1",
-						Browser.MOBILE_SAFARI10, "10.0", OperatingSystem.iOS10_IPHONE
+						Browser.MOBILE_SAFARI10, "10.0", OperatingSystem.iOS10_IPHONE },
+				{
+						"Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.25 (KHTML, like Gecko) Version/11.0 Mobile/15A5304j Safari/604.1",
+						Browser.MOBILE_SAFARI11, "11.0", OperatingSystem.iOS11_IPAD
 				}
 		});
 	}
